@@ -1,1 +1,3 @@
-# Modelling_low_dimensional_materials
+# Modelling low dimensional materials
+
+This repository will host content related to the "Modelling low dimensional materials" unit. 
