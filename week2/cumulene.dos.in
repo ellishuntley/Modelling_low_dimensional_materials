@@ -1,0 +1,7 @@
+&DOS
+    prefix      = 'cumulene',
+    outdir      = './'
+    Emin        = -8.0,
+    Emax        = 3.0,
+    DeltaE      = 0.01,
+ /

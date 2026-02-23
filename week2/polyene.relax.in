@@ -1,0 +1,45 @@
+ &CONTROL
+   calculation = 'relax',        ! relax positions only
+   outdir      = './'
+   prefix      = 'polyene',      ! name of calculation
+   forc_conv_thr = 1.0d-5,       ! tighter convergence
+   pseudo_dir   = './',        ! directory of pseudopotentials
+ /
+
+ &SYSTEM
+   ibrav       = 0,            ! manually defined lattice
+   nat         = 4,            ! # of atoms in the unit cell
+   ntyp        = 2,            ! # of types of atoms in the unit cell
+   ecutwfc     = 50.0,         ! kinetic energy cutoff for psi
+   ecutrho     = 340.0,        ! kinetic energy cutoff for rho
+   occupations = 'smearing',   ! smear out populations
+   smearing    = 'gaussian',   ! use gaussian smearing
+   degauss     = 0.005,        ! width of gaussian 
+ /
+ 
+ &ELECTRONS
+   conv_thr = 1.0d-7           ! convergence threshold
+ /
+
+ &IONS
+   ion_dynamics = 'bfgs',       ! algorithm for relaxation
+ /
+
+ATOMIC_SPECIES                  ! pseudopotentials
+C  12.011  C_alt.upf
+H  1.0079  H_alt.upf
+
+CELL_PARAMETERS (angstrom)
+   2.47   0.00   0.00
+   0.00   13.00  0.00
+   0.00   0.00  10.00
+
+ATOMIC_POSITIONS (angstrom)
+   C    0.00 5.00 0.00 0 1 0 ! relax only y 
+   C    1.20 5.65 0.00 1 1 0 ! relax x and y 
+   H    0.00 3.91 0.00 0 1 0 ! relax only y 
+   H    1.20 6.75 0.00 1 1 0 ! relax x and y
+
+K_POINTS automatic
+20 1 1  0 0 0 
+
