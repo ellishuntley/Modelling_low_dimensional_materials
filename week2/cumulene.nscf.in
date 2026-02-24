@@ -31,9 +31,9 @@ CELL_PARAMETERS angstrom
 
 ATOMIC_POSITIONS angstrom
    C    0.00 5.00 0.00
-   C    1.23 5.66 0.00
+   C    1.235 5.66 0.00
    H    0.00 3.94 0.00
-   H    1.23 6.72 0.00
+   H    1.235 6.72 0.00
    
 K_POINTS crystal_b
 2
