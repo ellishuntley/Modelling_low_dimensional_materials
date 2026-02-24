@@ -1,0 +1,6 @@
+ &BANDS
+    prefix      = 'cumulene',     ! name of calculation
+    outdir      = './'
+    filband     = 'cumulene.bands.dat'
+    lsym        = .true.,
+ /
