@@ -43,7 +43,7 @@ def plot_broadened_data(x, y):
     plt.show()
 
 
-def broaden(file_name, b_type="gauss", sigma=0.5, npoints=1000, save_csv=False):
+def broaden(file_name, b_type="gauss", sigma=0.4, npoints=1000, save_csv=False):
     """
     Main function for broadening data.
     """
