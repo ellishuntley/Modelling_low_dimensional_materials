@@ -31,11 +31,11 @@ plt.rcParams.update({
 def write_geom(filename):
     """
     Reads a Quantum Espresso input file and writes the atomic positions to an XSF file.
-    Input: filename (str) - the base name of the Quantum Espresso input file (without extension)
-    Output: ASE atoms object (also writes an XSF file with the atomic positions)
+    Input: filename (str) - the full name of the Quantum Espresso input file 
+    Output: ASE atoms object, function also writes an XSF file with the atomic positions
     """
-    atoms = read(f'{filename}.scf.in', format='espresso-in') 
-    write(f'{filename}.xsf', atoms) 
+    atoms = read(f"{filename}", format='espresso-in') 
+    write(f"{filename}.xsf", atoms) 
     return atoms
 
 # paste your plotting function here
