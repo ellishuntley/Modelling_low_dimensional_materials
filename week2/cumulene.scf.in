@@ -1,0 +1,39 @@
+ &CONTROL
+   calculation = 'scf',        ! type of calculation
+   outdir      = './'
+   prefix      = 'cumulene',   ! name of calculation
+   pseudo_dir   = './',        ! directory of pseudopotentials
+ /
+
+ &SYSTEM
+   ibrav       = 0,            ! manually defined lattice
+   nat         = 4,            ! # of atoms in the unit cell
+   ntyp        = 2,            ! # of types of atoms in the unit cell
+   ecutwfc     = 40.0,         ! kinetic energy cutoff for psi
+   ecutrho     = 160.0,        ! kinetic energy cutoff for rho
+   occupations = 'smearing',   ! smear out populations
+   smearing    = 'gaussian',   ! smearing type
+   degauss     = 0.005,         ! smearing width
+ /
+ 
+ &ELECTRONS
+   conv_thr = 1.0d-7           ! convergence threshold
+ /
+
+ATOMIC_SPECIES                  ! pseudopotentials
+C  12.011  C.UPF
+H  1.0079  H.UPF
+
+CELL_PARAMETERS angstrom
+   2.47 0.00 0.00
+   0.00 13.00 0.00
+   0.00 0.00 10.00
+
+ATOMIC_POSITIONS angstrom
+   C    0.00 5.00 0.00
+   C    1.235 5.66 0.00
+   H    0.00 3.94 0.00
+   H    1.235 6.72 0.00
+   
+K_POINTS automatic
+50 1 1  0 0 0 
