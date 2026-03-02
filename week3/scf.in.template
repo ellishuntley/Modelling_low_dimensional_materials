@@ -25,7 +25,7 @@ Mo   mass pp
 S    mass pp
 
 ATOMIC_POSITIONS angstrom
-# paste positions here
+# paste positions here, remember to put atomic symbols in the first column
 
 CELL_PARAMETERS angstrom
 # paste params here

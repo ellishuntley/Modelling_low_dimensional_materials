@@ -49,7 +49,7 @@ def plot_dos(e_range=4.0, file_name="work.dos"):
         first_line = f.readline()
         e_fermi = float(first_line.split()[8])
     energy_limits = [e_fermi - e_range, e_fermi + e_range]
-    dos = np.genfromtxt("{file_name}", skip_header=1) 
+    dos = np.genfromtxt(f"{file_name}", skip_header=1) 
 
     fig, ax = plt.subplots(1, 1)
     ax.plot(dos[:, 0], dos[:, 1], color = "k") 
