@@ -3,8 +3,8 @@
    prefix      = 'work',
    filpdos     = 'MoS2.pdos',
    DeltaE      = 0.02,
-   Emin        = 0.0,
-   Emax        = 4.0,
+   Emin        = -7.0,
+   Emax        = 13.0,
  /
 
 

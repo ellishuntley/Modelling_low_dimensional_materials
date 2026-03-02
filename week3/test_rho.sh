@@ -1,4 +1,4 @@
-for psi_cut in 60 70 80; do 
+for psi_cut in 10 20 30 40 50 60; do 
     # calculate rho_cut
     rho_cut=$(($psi_cut * 10))
     # replace psi_cut and rho_cut in template
