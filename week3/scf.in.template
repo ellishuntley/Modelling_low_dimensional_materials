@@ -1,0 +1,34 @@
+ &CONTROL
+   calculation = 'scf',         ! type of calculation
+   outdir      = './'
+   prefix      = 'work',        ! name of calculation
+   pseudo_dir   = './',        ! directory of pseudopotentials
+ /
+
+ &SYSTEM
+   ibrav       = 0,            ! manually defined lattice
+   nat         = 3,            ! # of atoms in the unit cell
+   ntyp        = 2,            ! # of types of atoms in the unit cell
+   ecutwfc     = psi_cut,      ! kinetic energy cutoff for psi
+   ecutrho     = rho_cut,      ! kinetic energy cutoff for rho
+   occupations = 'smearing',   ! smear out populations
+   smearing    = 'gaussian',   ! smearing type
+   degauss     = 0.005,        ! smearing width
+ /
+
+ &ELECTRONS
+   conv_thr = 1.0d-7           ! convergence threshold
+ /
+
+ATOMIC_SPECIES
+Mo   mass pp
+S    mass pp
+
+ATOMIC_POSITIONS angstrom
+# paste positions here, remember to put atomic symbols in the first column
+
+CELL_PARAMETERS angstrom
+# paste params here
+
+K_POINTS automatic
+6 6 1  0 0 0 

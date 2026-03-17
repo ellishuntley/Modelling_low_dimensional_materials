@@ -1,0 +1,6 @@
+ &BANDS
+    prefix      = 'work',     ! name of calculation
+    outdir      = './'
+    filband     = 'bands.dat'
+    lsym        = .true.,
+ /
